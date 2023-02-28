@@ -1,19 +1,34 @@
 body {
     background-color: lightblue;
 }
+#about {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 #skills {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 #slider {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 #projects {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 img {
     display: block;
     margin: auto;
+    width: 50%; 
+    height: 350px;
+}
+
+h3 {
+    margin-bottom: 50px;
+    text-align: center;
 }
