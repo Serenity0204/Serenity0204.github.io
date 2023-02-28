@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+}
+#skills {
+    margin-top: 50px;
+}
+
+#slider {
+    margin-top: 50px;
+}
+
+#projects {
+    margin-top: 50px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
