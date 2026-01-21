@@ -95,14 +95,20 @@ function runBootSequence() {
                 line.textContent = messages[i];
                 bootText.appendChild(line);
 
-                window.scrollTo(0, document.body.scrollHeight);
+                // Optimized: Only scroll if the text actually overflows the screen
+                if (document.body.scrollHeight > window.innerHeight) {
+                    window.scrollTo(0, document.body.scrollHeight);
+                }
 
                 i++;
                 const delay = 375;
                 setTimeout(printLine, delay);
             } else {
-                // Wait 800ms at the end before finishing
-                setTimeout(resolve, 800);
+                // Final pause: wait 800ms, then scroll to top and resolve
+                setTimeout(() => {
+                    window.scrollTo(0, 0);
+                    resolve();
+                }, 800);
             }
         }
         printLine();

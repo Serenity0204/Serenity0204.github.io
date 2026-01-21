@@ -565,20 +565,17 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #000000;
     color: #00ff00;
-    /* Terminal Green */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    padding: 2rem;
     z-index: 9999;
-    /* Ensures it sits on top of everything */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    padding: 2rem;
     overflow: hidden;
+    /* Prevents scrollbar 'jitter' during animation */
 }
 
 #boot-text {
