@@ -1,340 +1,109 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>YHL's Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<link rel="shortcut icon" type="image/x-icon" href="images/eduboost.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Heng Lin | Systems Portfolio</title>
+    <meta name="description" content="Portfolio of Yu-Heng Lin, Systems Programmer & Computer Architecture Hobbyist.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="is-preload">
+<body>
 
-	<!-- Sidebar -->
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<ul>
-					<li><a href="#intro">Welcome</a></li>
-					<li><a href="#one">Projects</a></li>
-					<li><a href="#two">Get in touch</a></li>
-				</ul>
-			</nav>
-		</div>
-	</section>
+    <div id="boot-screen">
+        <div id="boot-text"></div>
+        <div class="cursor">_</div>
+    </div>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <div id="site-wrapper" style="opacity: 0; transition: opacity 1s;">
 
-		<!-- Intro -->
-		<section id="intro" class="wrapper style1 fullscreen fade-up">
-			<div class="inner">
-				<h1>Yu-Heng Lin</h1>
-				<p>Hello, I'm Yu-Heng Lin, a third-year Computer Engineering student at UCSD with a strong passion for
-					programming,
-					particularly C and C++. I have dedicated much of my time to building C/C++ applications Beyond this,
-					I also have
-					experience with Golang and Python Django, though my main focus remains creating efficient,
-					high-performance
-					olutions in C/C++. I'm always eager to take on new challenges that allow me to refine my skills and
-					expand my expertise.</p>
-				<ul class="actions">
-					<li><a href="#one" class="button scrolly">Learn more</a></li>
-					<li><a href="resume/YH-Lin-Resume-006.pdf" class="button scrolly" target="_blank">Resume</a></li>
-					<li><a href="https://github.com/Serenity0204" class="button scrolly" target="_blank">GitHub</a></li>
-					<li><a href="https://github.com/Serenity0204/My-Projects-List" class="button scrolly"
-							target="_blank">Projects List</a></li>
-				</ul>
-			</div>
-		</section>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
 
-		<!-- One -->
-		<section id="one" class="wrapper style2 spotlights">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">Yu-Heng Lin's Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button></li>
+                </ul>
+                <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
 
-			<!-- EduBoost -->
-			<section>
-				<a href="https://github.com/Serenity0204/eduboost" class="image" target="_blank"><img
-						src="images/eduboost.png" alt="" data-position="100% 0%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>EduBoost</h2>
-						<p>EduBoost is a dynamic Education Platform crafted using Python Django, Bootstrap, and HTML,
-							dedicated to offering interactive and cost-free learning journeys. With a user-friendly
-							design, students can seamlessly enroll in a variety of courses and dive into a realm of
-							engaging subjects. Additionally, the platform enhances learning through online coding
-							exercises, ensuring practical and hands-on experience for learners of all levels.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/eduboost" class="button" target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- LTF -->
-			<section>
-				<a href="https://github.com/Serenity0204/Little-Test-Framework" class="image" target="_blank"><img
-						src="images/ltf.png" alt="" data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Little Test Framework (LTF)</h2>
-						<p>Little Test Framework(LTF), is a hassle-free, lightweight (700+ lines of code ONLY) C++ unit
-							testing framework. Designed to make your testing experience efficient and effective, this
-							framework provides a minimalistic approach while maintaining powerful testing capabilities.
-						</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/Little-Test-Framework" class="button"
-									target="_blank">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- LinnnCode -->
-			<section>
-				<a href="https://github.com/Serenity0204/LinnnCode" class="image" target="_blank"><img
-						src="images/linnncode.jpg" alt="" data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>LinnnCode</h2>
-						<p>LinnnCode is a practical online coding platform inspired by the gap between theoretical
-							learning and hands-on practice during our undergraduate studies. Similar to platforms like
-							LeetCode and HackerRank, it offers a user-friendly interface for problem-solving and code
-							submission in Python(Not yet) and C++. Experience real-time feedback through our embedded
-							code editor.
-						</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/LinnnCode" class="button" target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- GraphX -->
-			<section>
-				<a href="https://github.com/Serenity0204/GraphX" class="image" target="_blank"><img
-						src="images/graphx.png" alt="" data-position="100% 50%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>GraphX</h2>
-						<p> GraphX is a Python-based in-memory graph storage engine designed to facilitate the
-							representation of complex relational queries, enabling users to store data while effectively
-							capturing relationships between individual data points.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/GraphX" class="button" target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- SQL -->
-			<section>
-				<a href="https://github.com/Serenity0204/SQL" class="image" target="_blank"><img src="images/sql.png"
-						alt="" data-position="25% 25%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>SQL</h2>
-						<p>A relational database system built using C++, complete with a custom SQL-like language, from
-							the ground up. This project involved creating essential data structures, with the exception
-							of utilizing the pre-existing STL library. The system offers dual modes of interaction: a
-							user-friendly command-line mode and a batch mode capable of reading from files and
-							delivering outputs to either the terminal or files. The implemented SQL-like statements
-							encompass crucial functionalities such as select, insert, and create operations.
-						</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/SQL" class="button" target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- KV storage -->
-			<section>
-				<a href="https://github.com/Serenity0204/Simple-KV-Storage" class="image" target="_blank"><img
-						src="images/kv.png" alt="" data-position="25% 25%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Simple KV Storage</h2>
-						<p>A Fast and Persistent Header Files Only Key-Value Storage that's built on top of bitcask, it
-							supports template keys and template values. The code only consists of header files hence
-							it's easy to integrate into other projects.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/Simple-KV-Storage" class="button"
-									target="_blank">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- Little Cloud -->
-			<section>
-				<a href="https://littlecloud.pythonanywhere.com/" class="image" target="_blank"><img
-						src="images/little-cloud.png" alt="" data-position="25% 25%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Little Cloud</h2>
-						<p>Little Cloud is a powerful Cloud Storage and File Sharing System built using Django,
-							Bootstrap, HTML, and SQLite. With its intuitive interface and feature-rich functionalities,
-							it provides a seamless experience for managing and sharing files in the cloud.</p>
-						<ul class="actions">
-							<li><a href="https://littlecloud.pythonanywhere.com/" class="button" target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
+        <main id="main-content">
+            <section id="hero" class="hero-section">
+                <div class="container hero-content">
+                </div>
+            </section>
 
-			<!-- LVCS -->
-			<section>
-				<a href="https://github.com/Serenity0204/LVCS" class="image" target="_blank"><img src="images/lvcs.png"
-						alt="" data-position="top center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Little Version Control System (LVCS)</h2>
-						<p>LVCS(Little Version Control System) is a versatile version control system designed to
-							simplify code management and collaboration. With its intuitive command-line interface built
-							in golang cobra, users can efficiently track, stage, and commit changes, navigate branches,
-							and visualize commit history. Along with the version control functionalities, user will also
-							receive a random cute ASCII art everytime the user enters commands.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/LVCS" class="button" target="_blank">Learn
-									more</a></li>
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="filter-container" id="project-filters"></div>
+                    <div class="projects-grid" id="projects-grid">
+                    </div>
+                </div>
+            </section>
 
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- Graphinc Calc -->
-			<section>
-				<a href="https://github.com/Serenity0204/Graphing-Calculator" class="image" target="_blank"><img
-						src="images/graphing-calc.png" alt="" data-position="100% 100%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>SFML Graphing Calculator</h2>
-						<p>C++ SFML-based graphing calculator. This innovative tool effortlessly graphs functions and
-							operations (e.g., +, -, *, /, ^) with respect to the variable 'x', while offering zooming,
-							decimal value input, and error handling. The calculator utilizes Shunting Yard and RPN
-							algorithms for parsing user input into tokens and points, complemented by a unique random
-							color generator for visually distinct graphs.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/Graphing-Calculator" class="button"
-									target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- Black Jack -->
-			<section>
-				<a href="https://github.com/Serenity0204/Black-Jack-SFML" class="image" target="_blank"><img
-						src="images/bj.png" alt="" data-position="100% 100%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>SFML Black Jack</h2>
-						<p> A Blackjack game using C++ and SFML. This engaging project brings the classic card game to
-							life with intuitive gameplay, sleek visuals, and dynamic interactions. Players can enjoy the
-							thrill of Blackjack while experiencing seamless graphics and user-friendly controls.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/Black-Jack-SFML" class="button"
-									target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- Online Compiler -->
-			<section>
-				<a href="https://onlinecompiler0204.pythonanywhere.com/" class="image" target="_blank"><img
-						src="images/online-compiler.png" alt="" data-position="100% 100%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Online C++ Compiler</h2>
-						<p>The Online C++ Compiler is a web-based platform that allows users to write, compile, and run
-							C++ code directly from their browser, including a user-friendly interface and powerful code
-							editor. The code will be sent to the server and be compiled in realtime, to prevent
-							duplicate request of the same code, the server embeds a LRU cache to enhance the
-							performance.</p>
-						<ul class="actions">
-							<li><a href="https://onlinecompiler0204.pythonanywhere.com/" class="button"
-									target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
+            <section id="experience" class="section bg-alt">
+                <div class="container split-layout">
+                    <div class="half">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="timeline" id="experience-timeline"></div>
+                    </div>
+                    <div class="half">
+                        <h2 class="section-title">Education</h2>
+                        <div class="timeline" id="education-timeline"></div>
+                    </div>
+                </div>
+            </section>
 
+            <section id="skills" class="section">
+                <div class="container">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="skills-grid" id="skills-grid"></div>
+                </div>
+            </section>
 
-			<!-- E-Commerce -->
-			<section>
-				<a href="https://github.com/Serenity0204/e-commerce" class="image" target="_blank"><img
-						src="images/ecommerce.png" alt="" data-position="100% 100%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>E-Commerce</h2>
-						<p> An e-commerce platform utilizing Django and SQLite, replicating fundamental features
-							including user authentication, registration, cart management, order history, item deletion,
-							and seamless checkout processes.</p>
-						<ul class="actions">
-							<li><a href="https://github.com/Serenity0204/e-commerce" class="button"
-									target="_blank">Learn
-									more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</section>
+            <section id="about" class="section bg-alt">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-grid" id="about-content"></div>
+                </div>
+            </section>
 
+            <section id="contact" class="section">
+                <div class="container contact-container">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-text">I'm currently open to new opportunities in computer architecture & operating
+                        systems.</p>
+                    <div class="cta-group" id="contact-links"></div>
+                </div>
+            </section>
+        </main>
 
-		<!-- Three -->
-		<section id="two" class="wrapper style1 fade-up">
-			<div class="inner">
-				<h2>Get in touch</h2>
-				<p>Please feel free to reach out to me at your earliest convenience. I'm eager to engage in meaningful
-					conversations and assist you with any inquiries you may have. You can contact me via email.</p>
-				<section>
-					<ul class="contact">
-						<li>
-							<h3>Email</h3>
-							<span>yuhenglin02042003@gmail.com</span>
-						</li>
-						<li>
-							<h3>Social</h3>
-							<ul class="icons">
-								<li><a href="https://github.com/Serenity0204" class="icon brands fa-github"
-										target="_blank"><span class="label">GitHub</span></a>
-								</li>
-								<li><a href="https://www.linkedin.com/in/yu-heng-lin-b99b07278/"
-										class="icon brands fa-linkedin-in" target="_blank"><span
-											class="label">LinkedIn</span></a></li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-			</div>
-	</div>
-	</section>
+        <footer class="footer">
+            <div class="container">
+                <p id="footer-text"></p>
+                <a href="#" class="back-to-top">Back to Top ↑</a>
+            </div>
+        </footer>
 
-	</div>
-
-	<!-- Footer -->
-	<footer id="footer" class="wrapper style1-alt">
-		<div class="inner">
-			<ul class="menu">
-				<li>&copy; Yu-Heng Lin. All rights reserved.</li>
-			</ul>
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    </div>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
